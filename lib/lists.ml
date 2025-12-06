@@ -12,3 +12,17 @@ let fold_max count f =
         loop (i - 1) acc xs
   in
   loop (count - 1)
+
+let transpose rows =
+  let rec loop acc = function
+    | [] | [] :: _ -> List.rev acc
+    | rows ->
+        let rec split heads tails = function
+          | [] -> (List.rev heads, List.rev tails)
+          | [] :: _ -> ([], [])
+          | (head :: tail) :: rows -> split (head :: heads) (tail :: tails) rows
+        in
+        let heads, tails = split [] [] rows in
+        if heads = [] then List.rev acc else loop (heads :: acc) tails
+  in
+  loop [] rows

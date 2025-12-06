@@ -1,4 +1,4 @@
 (executables
- (public_names puzzle1 puzzle2 puzzle3 puzzle4 puzzle5)
- (names puzzle1 puzzle2 puzzle3 puzzle4 puzzle5)
+ (public_names puzzle1 puzzle2 puzzle3 puzzle4 puzzle5 puzzle6)
+ (names puzzle1 puzzle2 puzzle3 puzzle4 puzzle5 puzzle6)
  (libraries aoc2025))
