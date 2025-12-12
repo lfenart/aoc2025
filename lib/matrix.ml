@@ -7,7 +7,7 @@ let get t (x, y) =
   if x < 0 || x >= Array.length t then None
   else
     let line = Array.get t x in
-    if y < 0 || y >= Array.length t then None else Some (Array.get line y)
+    if y < 0 || y >= Array.length line then None else Some (Array.get line y)
 
 let get_unsafe t key = get t key |> Option.get
 let set t (x, y) v = Array.set (Array.get t x) y v
