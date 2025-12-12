@@ -9,7 +9,8 @@
   puzzle7
   puzzle8
   puzzle9
-  puzzle10)
+  puzzle10
+  puzzle11)
  (names
   puzzle1
   puzzle2
@@ -20,5 +21,6 @@
   puzzle7
   puzzle8
   puzzle9
-  puzzle10)
+  puzzle10
+  puzzle11)
  (libraries aoc2025))
